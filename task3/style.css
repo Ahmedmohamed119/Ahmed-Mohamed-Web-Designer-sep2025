@@ -1,0 +1,372 @@
+/* إعدادات عامة */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  hr {
+    border: 0;
+    border-top: 2px solid #ff8b38;
+    width: 60px;
+    margin: 20px 0;
+  }
+  
+  .orange-text {
+    color: #ff8b38;
+  }
+  
+  .view-inline {
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  /* شريط التنقل */
+  .navbar {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 20px 50px;
+  }
+  
+  .logo-title {
+    font-size: 26px;
+    letter-spacing: 2px;
+  }
+  
+  .logo-title span {
+    color: #ff8b38;
+  }
+  
+  .nav-list {
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-list li {
+    display: inline-block;
+    margin-left: 25px;
+  }
+  
+  .nav-list li a {
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  .nav-list li a:hover {
+    color: #ff8b38;
+  }
+  
+  /* الخلفية الأولى */
+  .bg-image {
+    background-image: url("images.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 100px 50px;
+    color: #fff;
+  }
+  
+  .section1-left {
+    width: 50%;
+  }
+  
+  .section1-left h1 {
+    font-size: 50px;
+    margin: 0;
+  }
+  
+  .section1-left h2 {
+    font-weight: normal;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  
+  .section1-left p {
+    margin-top: 20px;
+    line-height: 1.6;
+    width: 80%;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 25px;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background: #ff8b38;
+    border-color: #ff8b38;
+  }
+  
+  /* نموذج التسجيل */
+  .section1-form {
+    background-color: #fff;
+    color: #333;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px 20px;
+  }
+  
+  .section1-form h2 {
+    margin-bottom: 25px;
+  }
+  
+  .form-input {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .btn-form {
+    background-color: #ff8b38;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  /* قسم السوشيال ميديا */
+  .social-section {
+    background-color: #f4f4f4;
+    padding: 40px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .social-left h2 {
+    margin-bottom: 10px;
+  }
+  
+  .social-icons i {
+    margin: 0 10px;
+    color: #ff8b38;
+  }
+  
+  /* تبويبات */
+  .section-tabs {
+    background-color: #fff;
+    padding: 80px 50px;
+  }
+  
+  .tabs p {
+    background: #333;
+    color: #fff;
+    padding: 15px 25px;
+    margin: 0 10px;
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .active-tab {
+    background: #ff8b38;
+  }
+  
+  .tab-content {
+    width: 40%;
+    margin-top: 20px;
+  }
+  
+  .btn-orange {
+    background-color: #ff8b38;
+    color: #fff;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  /* صور الأقسام */
+  .image-reflected img,
+  .img-shadow {
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  }
+  
+  /* Sub list */
+  .sub-list {
+    padding: 80px 50px;
+  }
+  
+  .sub-header h2 {
+    font-size: 22px;
+  }
+  
+  .sub-item {
+    margin-top: 25px;
+  }
+  
+  .hr-class {
+    border-top: 2px solid #ff8b38;
+    width: 60px;
+  }
+  
+  /* Standard Picture Section */
+  .standard-picture {
+    background-color: #f8f8f8;
+    padding: 80px 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Why Awesome Section */
+  .why-awesome {
+    text-align: center;
+    padding: 80px 50px;
+  }
+  
+  .why-header h2 {
+    font-size: 24px;
+  }
+  
+  .why-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .why-item {
+    width: 25%;
+    margin: 0 20px;
+  }
+  
+  /* Pricing */
+  .pricing-options {
+    background-color: #f4f4f4;
+    padding: 80px 50px;
+    text-align: center;
+  }
+  
+  .pricing-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .pricing-card {
+    background: #fff;
+    margin: 0 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    width: 300px;
+  }
+  
+  .pricing-top {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .popular-btn {
+    background: #ff8b38;
+    color: #fff;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  /* Customers */
+  .customers {
+    padding: 80px 50px;
+    text-align: center;
+  }
+  
+  .customer-box {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  .container-message {
+    font-style: italic;
+  }
+  
+  .circular-radius {
+    width: 60px;
+    height: 10px;
+    border-radius: 50%;
+  }
+  
+  .arrow-down {
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #f4f4f4;
+    margin: 0 auto;
+  }
+  
+  /* Stylish Section */
+  .stylish {
+    background-image: url("images.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 50px;
+  }
+  
+  /* Contact Section */
+  .contact {
+    padding: 80px 50px;
+    text-align: center;
+  }
+  
+  .contact-form-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  
+  .contact-form {
+    width: 40%;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .send-btn {
+    margin-top: 30px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+  }
