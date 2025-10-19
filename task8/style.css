@@ -1,0 +1,109 @@
+body {
+    background-color: #111; 
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    max-width: 1200px;
+    width: 90%;
+}
+
+.card {
+    background-color: #333; 
+    padding: 25px;
+    border-radius: 15px;
+    position: relative; 
+    overflow: hidden; 
+    transition: background-color 0.3s ease; 
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.card-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.card-start {
+    font-size: 15px;
+    opacity: 1.7;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.card-start span {
+    color: orange;
+}
+
+
+.card::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 349px;
+    width: 100px;
+    height: 50px;
+    border-radius: 0 0 300px 300px;
+    transition: background-color 3s ease;
+}
+
+
+.color-orange::after {
+    background-color: #ff9900; 
+}
+.color-orange:hover {
+    background-color: #ff9900;
+}
+
+.color-green::after {
+    background-color: #00cc66; 
+}
+.color-green:hover {
+    background-color: #00cc66;
+}
+.color-red::after {
+    background-color: #ff3333; 
+}
+.color-red:hover {
+    background-color: #ff3333;
+}
+.color-purple::after {
+    background-color: #9933ff; 
+}
+.color-purple:hover {
+    background-color: #9933ff;
+}
+.color-pink::after {
+    background-color: #ff66cc; 
+}
+.color-pink:hover {
+    background-color: #ff66cc;
+}
+
+.color-blue::after {
+    background-color: #3366ff; 
+}
+.color-blue:hover {
+    background-color: #3366ff;
+}
+
+.card:hover {
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+}
