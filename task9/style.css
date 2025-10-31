@@ -1,0 +1,69 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: content-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.dropdown-menu{
+    background-color:#90906a;
+    color: inherit;
+}
+.menu button{
+    color: inherit;
+}
+.menu button:hover , .menu a:hover , .search-btn button i:hover  {
+    color: white;
+}
+.search-btn button{
+    color: #ffffff55;
+}
+  .menu .dropdown a:hover {
+    color: white;
+    background-color: transparent;
+ }
+.bottom-sec h2{
+    border: 3px solid white;
+    width: 18%;
+    border-left-color: blue;
+}
+.dont-miss a{
+    position: relative;
+}
+.dont-miss a::before{
+content: "";
+position: absolute;
+width: 0%;
+height: 3px;
+top: 190% ;
+left: 0;
+background-color: blue;
+transition: all ease-in-out 0.4s;
+}
+.dont-miss a:hover:before {
+    width: 100%;
+}
+.dont-miss a:hover{
+    color: #000;
+}
+.dont-miss .dropdown a {
+    color: #0000001e;
+
+}
+.full-card {
+    position: relative;
+}
+.full-card button{
+position: absolute;
+right: 75%;
+bottom: 90%;
+background-color: #ffffff;
+color: blue;
+}
+
+.triggers i {
+    width: 70px;
+    height: 70px;
+}
