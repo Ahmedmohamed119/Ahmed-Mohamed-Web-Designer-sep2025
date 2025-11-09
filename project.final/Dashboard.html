@@ -1,0 +1,838 @@
+
+ <!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style4.css">
+  <title>Profile 4</title>
+
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white main-navbar shadow-sm">
+    <div class="container-fluid  px-5">
+        
+        <a class="navbar-brand ps-5" href="#">
+        <img class="w-75" src="images/logo.png" alt="Logo">
+      </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav align-items-center">
+                
+               <li class="nav-item dropdown mx-2  ">
+            <a class="nav-link dropdown-toggle " href="#" data-bs-toggle="dropdown">Home</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">General Home 1</a></li>
+              <li><a class="dropdown-item" href="index.html">General Home 2</a></li>
+              <li><a class="dropdown-item" href="#">General Home 3</a></li>
+              <li><a class="dropdown-item" href="#">Cardiology</a></li>
+              <li><a class="dropdown-item" href="#">Eyecare</a></li>
+              <li><a class="dropdown-item" href="#">Veterinary</a></li>
+              <li><a class="dropdown-item" href="#">Pediatric</a></li>
+              <li><a class="dropdown-item" href="#">Fertility</a></li>
+              <li><a class="dropdown-item" href="#">ENT</a></li>
+              <li><a class="dropdown-item" href="#">Cosmetics</a></li>
+              <li><a class="dropdown-item" href="#">Lab Test</a></li>
+            </ul>
+          </li>
+                
+                <li class="nav-item dropdown active-nav-item">
+                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDoctors" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Doctors
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDoctors">
+                        <li><a class="dropdown-item" href="profile.html">Doctor Profile </a></li>
+                        <li><a class="dropdown-item" href="dashboard.html">Doctor Dashboard</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarPatients" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Patients
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarPatients">
+                        <li><a class="dropdown-item" href="#">Search Patient</a></li>
+                        <li><a class="dropdown-item" href="profile2.html">Doctor Profile2 </a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarPharmacy" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Pharmacy
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarPharmacy">
+                        <li><a class="dropdown-item" href="#">Search Pharmacy</a></li>
+                        <li><a class="dropdown-item" href="#">Pharmacy Dashboard</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarPages" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Pages
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarPages">
+                        <li><a class="dropdown-item" href="#">About Us</a></li>
+                        <li><a class="dropdown-item" href="#">Services</a></li>
+                        <li><a class="dropdown-item" href="#">FAQ</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarBlog" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Blog
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarBlog">
+                        <li><a class="dropdown-item" href="#">Blog List</a></li>
+                        <li><a class="dropdown-item" href="#">Blog Details</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarAdmin" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Admin
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarAdmin">
+                        <li><a class="dropdown-item" href="#">Admin Login</a></li>
+                        <li><a class="dropdown-item" href="#">Admin Dashboard</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item ps-4 d-flex align-items-center navbar-icons">
+                    
+                    <a class="nav-icon-link me-2" href="#"><i class="fas fa-search"></i></a>
+          
+                    <a id="themeToggle" class="nav-icon-link me-2" style="cursor:pointer;" ><i id="themeIcon" class="fa-solid fa-sun"></i></a>
+
+                    <a class="nav-icon-link me-2" href="#"><i class="fas fa-bell"></i></i><span class="badge bg-danger small position-absolute top-0 end-0 rounded-circle">1</span></a>
+                    <a class="nav-icon-link me-2" href="#"><i class="fas fa-shopping-cart"></i> </i><span class="badge bg-success small position-absolute top-0 end-0 rounded-circle">1</span></a>
+                    <a class="nav-icon-link me-3" href="#"><i class="fas fa-user-circle"></i></i><span class="badge bg-primary small position-absolute top-0 end-0 rounded-circle">1</span></a>
+
+                    <a class="nav-link  p-0" href="#">
+                        <img src="images/doctor-thumb-02-Cbbh6L4C.jpg" alt="" class="rounded-circle profile-image">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+  <div class="text-center navbar-doctor position-relative pt-5 pb-4 mb-5  " style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol  class="breadcrumb small mb-0 justify-content-center  text-muted fw-medium">
+                <li class="breadcrumb-item "><i class="fa-solid fa-house text-info"></i></li>
+                <li class="breadcrumb-item ">Doctors</li>
+                <li class="breadcrumb-item  " >Dashboard</li>
+            </ol>
+        
+        <h1 class="display-6 fw-bold mb-4 profile-page-title">Dashboard</h1>
+
+        <img class="position-absolute top-0 start-0" src="images/breadcrumb-bg-01.png" alt="">
+                <img class="position-absolute top-0 end-0" src="images/breadcrumb-bg-02.png" alt="">
+
+
+        </div>
+
+<section class="doctor-profile-settings  ">
+    <div class="container">
+      
+
+        <div class="row ">
+            
+            <div class="col-lg-3 col-md-4">
+                <div class="profile-sidebar rounded-3 p-3   ">
+                    
+                    <div class="doctor-info-box text-center mb-3 mt-4 p-3  ">
+                        <img src="images/doctor-thumb-02-Cbbh6L4C.jpg" alt="img" class="img-fluid rounded-circle mb-2 profile-photo-lg">
+                        <h5 class="fw-bold mb-0">Dr Edalin Hendry</h5>
+                        <p class="small text-muted mb-1">BDS, MDS - Oral & Maxillofacial Surgery</p>
+                        <span class="badge bg-primary-light text-primary small">Dentist</span>
+                    </div>
+
+                    <div class="availability-box mb-4">
+                        <p class="small fw-bold mb-1 text-dark">Availability</p>
+                        <select class="form-select form-select-sm" aria-label="Availability Status">
+                            <option selected>I Am Available Now</option>
+                            <option value="1">Busy</option>
+                            <option value="2">On Leave</option>
+                        </select>
+                    </div>
+
+                    <ul class="list-unstyled profile-nav-list">
+                        <li class="active"><a href="#"><i class="fas fa-tachometer-alt me-2"></i> Dashboard</a></li>
+                        <li><a href="#"><i class="fas fa-file-alt me-2"></i> Requests <span class="badge bg-warning text-dark float-end">0</span></a></li>
+                        <li><a href="#"><i class="fas fa-calendar-check me-2"></i> Appointments</a></li>
+                        <li><a href="#"><i class="fas fa-clock me-2"></i> Available Timings</a></li>
+                        <li><a href="#"><i class="fas fa-users me-2"></i> My Patients</a></li>
+                        <li><a href="#"><i class="fas fa-medkit me-2"></i> Specialties & Services</a></li>
+                        <li><a href="#"><i class="fas fa-star me-2"></i> Reviews</a></li>
+                        <li><a href="#"><i class="fas fa-book me-2"></i> Accounts</a></li>
+                        <li><a href="#"><i class="fas fa-file-invoice me-2"></i> Invoices</a></li>
+                        <li><a href="#"><i class="fas fa-wallet me-2"></i> Payout Settings <span class="badge bg-warning text-dark float-end">0</span></a></li>
+                        <li ><a href="#"><i class="fas fa-cog me-2"></i> Profile Settings</a></li>
+                        <li><a href="#"><i class="fas fa-share-alt me-2"></i> Social Media</a></li>
+                        <li><a href="#"><i class="fas fa-key me-2"></i> Change Password</a></li>
+                        <li><a href="#"><i class="fas fa-sign-out-alt me-2"></i> Logout</a></li>
+                    </ul>
+
+                </div>
+            </div>
+
+             <div class="col-lg-9 col-md-8">
+
+            <div class="row mb-4 align-items-center">
+                
+                <div class="col-lg-4 align-self-start">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card shadow-sm rounded-3 mb-4 p-1">
+                                <div class="card-body  d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <p class="patient-description-title">Total Patient</p>
+                                        <div class="patient-description-number fw-bold">978</div>
+                                        <small class="text-success fw-semibold"><i class="fas fa-arrow-up"></i> 15% From Last Week</small>
+                                    </div>
+                                    <div class="patient-description-icon-box d-flex align-items-center justify-content-center p-4 rounded-2">
+                                        <i class="fas fa-user-friends patient-description-icon "></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-12">
+                            <div class="card mb-4 p-1 shadow-sm">
+                                <div class="card-body d-flex justify-content-between align-items-center ">
+                                    <div>
+                                        <p class="patient-description-title">Patients Today</p>
+                                        <div class="patient-description-number fw-bold">80</div>
+                                        <small class="text-danger fw-semibold"><i class="fas fa-arrow-up"></i> 10% From Yesterday</small>
+                                    </div>
+                                    <div class="patient-description-icon-box  d-flex align-items-center justify-content-center p-4 rounded-2">
+                                        <i class="fas fa-user-friends patient-description-icon "></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-12">
+                            <div class="card p-1 shadow-sm ">
+                                <div class="card-body  d-flex justify-content-between align-items-center ">
+                                    <div>
+                                        <p class="patient-description-title">Appointments Today</p>
+                                        <div class="patient-description-number fw-bold">50</div>
+                                        <small class=" text-success fw-semibold"><i class="fas fa-arrow-down"></i> 20% From Yesterday</small>
+                                    </div>
+                                    <div class="patient-description-icon-box  d-flex align-items-center justify-content-center p-4 rounded-2">
+                                        <i class="fas fa-calendar-check patient-description-icon"></i> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-8">
+                    <div class="card appointment h-100 rounded-3 shadow-sm">
+                        <div class="card-header d-flex justify-content-between align-items-center bg-white">
+                            <h5 class="mb-0 fs-5 fw-bold">Appointment</h5>
+                            <div class="dropdown">
+                                <button class="btn btn-sm py-2 px-4 dropdown-toggle border" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Last 7 Days
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Today</a></li>
+                                    <li><a class="dropdown-item" href="#">This Month</a></li>
+                                    <li><a class="dropdown-item" href="#">Last 7 Days</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex align-items-center justify-content-between  description-patient">
+                                    <div class="d-flex align-items-center ">
+                                        <img src="images/profile-01-DT2Z6e8O.jpg" class="rounded-3  " alt="Adrian Marshall">
+                                        <div class="ms-2 "><small class="text-primary">#Apt0001</small>
+                                            <p class="fw-bold appointment-patient-name">Adrian Marshall</p></div>
+                                    </div>
+                                    <div >
+                                        <p class="fw-bold mb-0">11 Nov 2025 10:45 AM</p>
+                                        <small class="badge bg-primary text-white ">General</small>
+                                    </div>
+                                    <div class="appointment-status">
+                                       <i class="fa-regular fa-circle-check text-success fs-3"></i>
+                                    <i class="fa-regular fa-circle-xmark text-danger fs-3"></i> 
+                                    </div>
+                                </li>
+
+                                <li class="list-group-item d-flex align-items-center justify-content-between description-patient  ">
+                                    <div class="d-flex align-items-center">
+                                        <img src="images/profile-02-CfwraHe7.jpg" class="rounded-3" alt="Kelly Stevens">
+                                        <div class="ms-2 "><small class="text-primary">#Apt0002</small> <p class="fw-bold appointment-patient-name">Kelly Stevens</p></div>
+                                    </div>
+                                    <div>
+                                        <p class="fw-bold mb-0">10 Nov 2025 11:00 AM</p>
+                                        <small class="badge bg-primary text-white">Clinic Consulting</small>
+                                    </div>
+                                    <div class="appointment-status">
+                                        <i class="fa-regular fa-circle-check text-success fs-3"></i>
+                                    <i class="fa-regular fa-circle-xmark text-danger fs-3"></i> 
+                                    </div>
+                                </li>
+
+                                <li class="list-group-item d-flex align-items-center justify-content-between  description-patient">
+                                    <div class="d-flex align-items-center">
+                                        <img src="images/profile-03-ComJhJvI.jpg" class="rounded-3" alt="Samuel Anderson">
+                                        <div class="ms-2 "><small class="text-primary">#Apt0003</small><p class="fw-bold appointment-patient-name">Samuel Anderson</p></div>
+                                    </div>
+                                    <div >
+                                        <p class="fw-bold mb-0">03 Nov 2025 02:00 PM</p>
+                                        <small class="badge bg-primary text-white">General</small>
+                                    </div>
+                                    <div class="appointment-status">
+                                       <i class="fa-regular fa-circle-check text-success fs-3"></i>
+                                    <i class="fa-regular fa-circle-xmark text-danger fs-3"></i> 
+                                    </div>
+                                </li>
+
+                                 <li class="list-group-item d-flex align-items-center justify-content-between description-patient ">
+                                    <div class="d-flex align-items-center">
+                                        <img src="images/profile-04-CEtoD4p6.jpg" class="rounded-3" alt="Catherine Griffin">
+                                        <div class="ms-2 "><small class="text-primary">#Apt0004</small><p class="fw-bold appointment-patient-name">Catherine Griffin</p></div>
+                                    </div>
+                                    <div>
+                                        <p class="fw-bold mb-0">01 Nov 2025 04:00 PM</p>
+                                        <small class="badge bg-primary text-white">Clinic Consulting</small>
+                                    </div>
+                                    <div class="appointment-status">
+                                        <i class="fa-regular fa-circle-check text-success fs-3"></i>
+                                    <i class="fa-regular fa-circle-xmark text-danger fs-3"></i> 
+                                    </div>
+                                </li>
+
+
+                                <li class="list-group-item d-flex align-items-center justify-content-between description-patient ">
+                                    <div class="d-flex align-items-center">
+                                        <img src="images/profile-05-C4xc7dns.jpg" class="rounded-3" alt="Robert Hutchinson">
+                                        <div class="ms-2 "><small class="text-primary">#Apt0005</small><p class="fw-bold appointment-patient-name">Robert Hutchinson</p></div>
+                                    </div>
+                                    <div >
+                                        <p class="fw-bold mb-0">28 Oct 2025 05:30 PM</p>
+                                        <small class="badge bg-primary text-white">General</small>
+                                    </div>
+                                    <div class="appointment-status">
+                                        <i class="fa-regular fa-circle-check text-success fs-3"></i>
+                                    <i class="fa-regular fa-circle-xmark text-danger fs-3"></i>                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mb-4">
+                
+                <div class="col-lg-5 mb-3">
+                    <div class="card mb-4">
+                        <div class="card-header border-0 pb-0 bg-white">
+                            <h5 class="card-title fs-5 fw-bold">Weekly Overview Mar 14 - Mar 21</h5>
+                            <ul class="nav nav-tabs card-header-tabs" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-bs-toggle="tab" href="#revenue">Revenue</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#appointments">Appointments</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-body pt-2">
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="revenue" role="tabpanel">
+                                    <div class="chart-container" style="background-color: transparent; display: block;">
+                                        <div class="d-flex justify-content-around align-items-end h-100 p-2">
+                                            <div style="height: 40%; width: 10%; background-color: #007bff; border-radius: 3px;"></div>
+                                            <div style="height: 60%; width: 10%; background-color: #007bff; border-radius: 3px;"></div>
+                                            <div style="height: 30%; width: 10%; background-color: #007bff; border-radius: 3px;"></div>
+                                            <div style="height: 70%; width: 10%; background-color: #007bff; border-radius: 3px;"></div>
+                                            <div style="height: 50%; width: 10%; background-color: #007bff; border-radius: 3px;"></div>
+                                            <div style="height: 80%; width: 10%; background-color: #007bff; border-radius: 3px;"></div>
+                                            <div style="height: 20%; width: 10%; background-color: #007bff; border-radius: 3px;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="appointments" role="tabpanel">
+                                    <p class="text-center text-muted">Other Appointment Data</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                   <div class="card">
+                        <div class="card-header d-flex justify-content-between align-items-center ">
+                            <h5 class="mb-0 fs-5 fw-bold">Recent Patients</h5>
+                            <a href="#" class="btn btn-sm btn-link p-0 fw-bold hover-black">View All</a>
+                        </div>
+                        <div class="card-body pt-0">
+                            <div class="d-flex align-items-center justify-content-center gap-3">
+                                <div class=" bg-light  mt-4 rounded-3 py-3 px-4">
+                                    <img src="images/profile-01-DT2Z6e8O.jpg" class="recent-patients-img rounded-3 mb-2" alt="Adrian Marshall">
+                                    <p class="fw-bold mb-0 recent-patients-name">Adrian Marshall</p>
+                                    <small class="d-block text-primary ">Patient ID: P0001</small>
+                                    <hr>
+                                  <small >15 Mar 2025</small>
+
+                                    <small class="d-block">Last Appointment</small>
+                                </div>
+
+                                  <div class=" bg-light  mt-4 rounded-3 py-3 px-4">
+                                    <img src="images/profile-02-CfwraHe7.jpg" class="recent-patients-img rounded-3 mb-2" alt="Adrian Marshall">
+                                    <p class="fw-bold mb-0 recent-patients-name ">Kelly Stevens</p>
+                                    <small class="d-block text-primary ">Patient ID : P0002</small>
+                                    <hr>
+                                    <small >13 Mar 2025</small>
+
+                                    <small class="d-block">Last Appointment</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="col-lg-7 mb-3">
+                    
+                    <div class="card  bg-primary border-0 text-white rounded-3 mb-4">
+                        <div class="card-body">
+                                <h5 class="fw-bold mb-4 fs-5 text-white">Upcoming Appointment</h5>
+
+                            <div class="d-flex align-items-center justify-content-between    mb-5  ">
+                                <div class="d-flex align-items-center">
+                                  <img src="images/profile-01-DT2Z6e8O.jpg" class="rounded-3 upcoming-img" alt="Adrian Marshall">
+                                     <div class="ms-3">
+                                       <small class="text-white">#Apt0001</small>
+
+                                         <p class="fw-bold mb-0 text-white ">Adrian Marshall</p>
+                                </div>
+                                   
+                                </div>
+                                <div>
+                                <p class=" fw-semibold mb-1">General visit</p>
+                                <p class="mb-0 fw-semibold">Today, 10:45 AM</p>
+                                </div>
+                               
+                            </div>
+
+                            <div class="upcoming-buttons d-flex justify-content-between align-items-center">
+                               <p> <i class="fas fa-video"></i> Video Appointment</p>
+                               <div class="d-flex align-items-center">
+                                <a href="#" class="btn rounded-pill text-black  bg-light d-flex align-items-center fw-bold me-2 fs-6">Chat Now</a>
+                                <a href="#" class="btn rounded-pill text-black  bg-light d-flex align-items-center fw-bold fs-6"> Start Appointment</a>
+                               </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-header d-flex justify-content-between align-items-center bg-white">
+                            <h5 class="mb-0 fs-5 fw-bold">Recent Invoices</h5>
+                            <a href="#" class="btn btn-sm btn-link p-0 fw-bold hover-black">View All</a>
+                        </div>
+                        <div class="card-body p-0">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item p-4 pb-1 border-0 d-flex align-items-center justify-content-between">
+                                    
+                                    
+                                    
+                                    <div class=" d-flex align-items-center">
+                                        <img src="images/profile-01-DT2Z6e8O.jpg" class="rounded-3 " alt="Adrian Marshall">
+                                        <div class="ms-2">
+                                            <p class="fw-bold mb-0 invoice-name">Adrian</p>
+                                            <small class="text-primary">#Apt0001</small>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <p class="fw-semibold mb-0 text-muted">Amount</p>
+                                        <p class="fw-semibold mb-0">$450</p>
+                                    </div>
+
+                                       <div class="">
+                                        <p class="fw-semibold mb-0 text-muted ">Paid on</p>
+                                        <p class="fw-semibold mb-0">11 Nov 2025</p>
+                                    </div>
+
+                                    <div class="d-flex align-items-center p-2 bg-secondary bg-opacity-25 rounded-circle">
+                                    <i class="fas fa-eye status-icon-eye text-black"></i>
+
+                                    </div>
+                                
+                                </li>
+
+
+                              <li class="list-group-item px-4 border-0 d-flex align-items-center justify-content-between">
+                                    
+                                    
+                                    
+                                    <div class=" d-flex align-items-center">
+                                        <img src="images/profile-02-CfwraHe7.jpg" class="rounded-3 " alt="Adrian Marshall">
+                                        <div class="ms-2">
+                                            <p class="fw-bold mb-0 invoice-name">Kelly</p>
+                                            <small class="text-primary">#Apt0002</small>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <p class="fw-semibold mb-0 text-muted">Paid On</p>
+                                        <p class="fw-semibold mb-0">10 Nov 2025
+                                       </p>
+                                    </div>
+
+                                       <div class="">
+                                        <p class="fw-semibold mb-0 text-muted">Amount
+                                        </p>
+                                        <p class="fw-semibold mb-0">$500
+                                          </p>
+                                    </div>
+
+                                    <div class="d-flex align-items-center p-2 bg-secondary bg-opacity-25 rounded-circle">
+                                    <i class="fas fa-eye status-icon-eye text-black"></i>
+
+                                    </div>
+                                
+                                </li>
+
+
+                                <li class="list-group-item border-0 px-4 d-flex align-items-center justify-content-between">
+                                    
+                                    
+                                    
+                                    <div class=" d-flex align-items-center">
+                                        <img src="images/profile-03-ComJhJvI.jpg" class="rounded-3 " alt="Adrian Marshall">
+                                        <div class="ms-2">
+                                            <p class="fw-bold mb-0 invoice-name">Samuel</p>
+                                            <small class="text-primary">Catherine</small>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <p class="fw-semibold mb-0 text-muted">Paid On
+                                           </p>
+                                        <p class="fw-semibold mb-0">03 Nov 2025
+                                          </p>
+                                    </div>
+
+                                       <div class="">
+                                        <p class="fw-semibold mb-0 text-muted">Amount
+                                           </p>
+                                        <p class="fw-semibold mb-0">$320
+                                        </p>
+                                    </div>
+
+                                    <div class="d-flex align-items-center p-2 bg-secondary bg-opacity-25 rounded-circle">
+                                    <i class="fas fa-eye status-icon-eye text-black"></i>
+
+                                    </div>
+                                
+                                </li>
+
+                                <li class="list-group-item border-0 px-4 d-flex align-items-center justify-content-between">
+                                    
+                                    
+                                    
+                                    <div class=" d-flex align-items-center">
+                                        <img src="images/profile-04-CEtoD4p6.jpg" class="rounded-3 " alt="Adrian Marshall">
+                                        <div class="ms-2">
+                                            <p class="fw-bold mb-0 invoice-name">Catherine</p>
+                                            <small class="text-primary">#Apt0004</small>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <p class="fw-semibold mb-0 text-muted">Paid</p>
+                                        <p class="fw-semibold mb-0">01 Nov 2025</p>
+                                    </div>
+
+                                       <div class="">
+                                        <p class="fw-semibold mb-0 text-muted">Amount</p>
+                                        <p class="fw-semibold mb-0">$240</p>
+                                    </div>
+
+                                    <div class="d-flex align-items-center p-2 bg-secondary bg-opacity-25 rounded-circle">
+                                    <i class="fas fa-eye status-icon-eye text-black"></i>
+
+                                    </div>
+                                
+                                </li>
+
+
+                                <li class="list-group-item border-0 px-4 d-flex align-items-center justify-content-between">
+                                    
+                                    
+                                    
+                                    <div class=" d-flex align-items-center">
+                                        <img src="images/profile-05-C4xc7dns.jpg" class="rounded-3 " alt="Adrian Marshall">
+                                        <div class="ms-2">
+                                            <p class="fw-bold mb-0 invoice-name">Robert</p>
+                                            <small class="text-primary">#Apt0005</small>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <p class="fw-semibold mb-0 text-muted">Paid On</p>
+                                        <p class="fw-semibold mb-0">28 Oct 2025</p>
+                                    </div>
+
+                                       <div class="">
+                                        <p class="fw-semibold mb-0 text-muted">Amount</p>
+                                        <p class="fw-semibold mb-0">$380</p>
+                                    </div>
+
+                                    <div class="d-flex align-items-center p-2 bg-secondary bg-opacity-25 rounded-circle">
+                                    <i class="fas fa-eye status-icon-eye text-black"></i>
+
+                                    </div>
+                                
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row mb-4">
+                
+                <div class="col-lg-7 mb-3">
+                    <div class="card h-100 ">
+                        <div class="card-header d-flex justify-content-between align-items-center bg-white">
+                            <h5 class="mb-0 fs-5 fw-bold">Notifications</h5>
+                            <a href="#" class="btn btn-sm btn-link p-0 fw-bold hover-black">View All</a>
+                        </div>
+                        <div class="card-body p-3 pb-4">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item  d-flex align-items-center gap-2 border-0 mt-2 ">
+                                    <div class="d-flex align-items-center justify-content-center bg-secondary bg-opacity-10 rounded-3 p-3">
+                                    <i class="fas fa-bell text-info "></i> 
+
+                                    </div>
+                                    <div><p class="mb-0 notification-descripton">Booking Confirmed on <span class="fw-bold hover-delay">21 Mar 2025</span> 10:30 AM</p><small class=" fw-medium">Just Now</small></div>
+                                </li>
+
+
+                                <li class="list-group-item d-flex align-items-center gap-2 border-0 mt-2">
+                                    <div class="d-flex align-items-center justify-content-center rounded-3 bg-secondary bg-opacity-10 p-3">
+                                    <i class="fas fa-star text-primary "></i> 
+
+                                    </div>
+                                    <div><p class="mb-0 notification-descripton">You have a <span class="fw-bold hover-delay">New</span> Review for your Appointment</p><small class="fw-medium">5 Days ago</small></div>
+                                </li>
+
+
+                                <li class="list-group-item d-flex align-items-center gap-2 border-0 mt-2 ">
+
+                                    <div class="d-flex align-items-center justify-content-center rounded-3 bg-secondary bg-opacity-10 p-3">
+                                    <i class="fas fa-calendar-alt text-danger "></i> 
+
+                                    </div>
+                                    <div><p class="mb-0 notification-descripton">You have Appointment with <span class="fw-bold hover-delay">Ahmed</span> by 01:20 PM</p><small class="fw-medium">5 Days ago</small></div>
+                                </li>
+
+
+
+                                <li class="list-group-item d-flex align-items-center gap-2 border-0 mt-2">
+                                    <div class="d-flex align-items-center justify-content-center rounded-3 bg-secondary bg-opacity-10 p-3">
+                                    <i class="fas fa-money-bill-wave text-warning "></i> 
+
+                                    </div>
+                                    <div><p class="mb-0 notification-descripton">Sent an amount of <span class="fw-bold hover-delay">$200</span> for an  by  01:20 PM </p><small class="fw-medium">2 Days ago</small></div>
+                                </li>
+
+
+                                <li class="list-group-item d-flex align-items-center gap-2 border-0 mt-2">
+                                    <div class="d-flex align-items-center justify-content-center rounded-3 bg-secondary bg-opacity-10 p-3">
+                                    <i class="fas fa-star text-primary "></i> 
+
+                                    </div>
+                                    <div><p class="mb-0 notification-descripton">You have a <span class="fw-bold hover-delay">New</span> Review for your Appointment</p><small class="fw-medium">5 Days ago</small></div>
+                                </li>
+                              
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-5 mb-3">
+                    <div class="card h-100">
+                         <div class="card-header d-flex justify-content-between align-items-center bg-white">
+                            <h5 class="mb-0 fs-5 fw-bold">Clinics & Availability</h5>
+                        </div>
+                        <div class="card-body p-0">
+                            <ul class="list-group list-group-flush  ">
+                                <li class="list-group-item clinic-item bg-light p-4  m-auto mt-3 rounded-3">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <div class="d-flex align-items-center gap-2">
+                                            <img src="images/clinic-02-Dk-Adecs.jpg" class="rounded-3 " alt="Sofi's Clinic">
+                                            <h6 class="mb-0 fw-bold">Sofi's Clinic</h6>
+                                        </div>
+                                        <p class="mb-0 fw-bold">$900</p>
+                                    </div>
+                                    <div class="bg-white p-3 d-flex justify-content-between align-items-center">
+                                      <div class="">
+                                        <p class=" mb-0"><span class="fw-bold">Tue</span> : 07:00 AM - 09:00 PM</p>
+                                      <p class="mb-0"><span class="fw-bold">Wed</span> : 07:00 AM - 09:00 PM</p>
+
+                                    </div>
+                                        
+                                      <a href="#" class="text-black clinc-link">Change</a>
+
+
+                                    </div>
+                                  
+                                </li>
+
+                             <li class="list-group-item clinic-item bg-light p-4  m-auto mt-3 rounded-3 mb-3">
+                                    <div class="d-flex justify-content-between align-items-center ">
+                                        <div class="d-flex align-items-center gap-2">
+                                            <img src="images/clinic-01-DaCJn46U.jpg" class="rounded-3 " alt="The Family Dentistry Clinic">
+                                            <h6 class="mb-0 fw-bold">The Family Dentistry Clinic</h6>
+                                        </div>
+                                        <p class="mb-0 fw-bold">$600</p>
+                                    </div>
+                                    <div class="bg-white p-3 d-flex justify-content-between align-items-center">
+                                      <div class="">
+                                        <p class=" mb-0"><span class="fw-bold">Sat</span> : 07:00 AM - 09:00 PM</p>
+                                      <p class="mb-0"><span class="fw-bold">Thu</span> : 07:00 AM - 09:00 PM</p>
+
+                                    </div>
+                                        
+                                      <a href="#" class="text-black clinc-link">Change</a>
+
+
+                                    </div>
+                                  
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+        </div>
+    </div>
+</section>
+
+
+<footer class="  mt-5 pt-5  position-relative">
+    <div class="container  footer-top">
+            <img class="position-absolute top-0 end-0 " src="images/footer-bg-02.png" alt="">
+
+        <div class="row">
+
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                <h5 class="fw-bold mb-4 footer-heading text-dark">Company</h5>
+                <ul class="list-unstyled footer-links">
+                    <li class="mb-3 fw-medium "> <a  href="#" >About</a></li>
+                    <li class="mb-3 fw-medium"><a href="#">Features</a></li>
+                    <li class="mb-3 fw-medium"><a href="#">Works</a></li>
+                    <li class="mb-3 fw-medium"><a href="#">Careers</a></li>
+                    <li class="mb-3 fw-medium"><a href="#">Locations</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                <h5 class="fw-bold mb-4 footer-heading text-dark">Treatments</h5>
+                <ul class="list-unstyled footer-links">
+                    <li class="mb-3 fw-medium"><a href="#">Dental</a></li>
+                    <li class="mb-3 fw-medium"><a href="#">Cardiac</a></li>
+                    <li class="mb-3 fw-medium"><a href="#">Spinal Cord</a></li>
+                    <li class="mb-3 fw-medium"><a href="#">Hair Growth</a></li>
+                    <li class="mb-3 fw-medium"><a href="#">Anemia & Disorder</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                <h5 class="fw-bold mb-4 footer-heading text-dark">Specialities</h5>
+                <ul class="list-unstyled footer-links">
+                    <li class="mb-3 fw-medium"><a href="#">Transplant</a></li>
+                    <li class="mb-3 fw-medium"><a href="#">Cardiologist</a></li>
+                    <li class="mb-3 fw-medium"><a href="#">Oncology</a></li>
+                    <li class="mb-3 fw-medium"><a href="#">Pediatrics</a></li>
+                    <li class="mb-3 fw-medium"><a href="#">Gynaecology</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                <h5 class="fw-bold mb-4 footer-heading text-dark">Utilites</h5>
+                <ul class="list-unstyled footer-links">
+                    <li class="mb-3 fw-medium"><a href="#">Pricing</a></li>
+                    <li class="mb-3 fw-medium"><a href="#">Contact</a></li>
+                    <li class="mb-3 fw-medium"><a href="#">Request A Quote</a></li>
+                    <li class="mb-3 fw-medium"><a href="#">Premium Membership</a></li>
+                    <li class="mb-3 fw-medium"><a href="#">Integrations</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-8 col-sm-12 mb-4">
+                <h5 class="fw-bold mb-3 footer-heading text-dark">Newsletter</h5>
+                <p class=" text-muted mb-2">Subscribe & Stay Updated from the Doccure</p>
+                
+                <div class="input-group mb-4 newsletter-input-group  position-relative">
+                    <input type="email" class="form-control p-3 " placeholder="Enter Email Address" aria-label="Enter Email Address">
+                    <button class="btn btn-info rounded-pill fw-bold  position-absolute text-white " >
+                        <i class="fas fa-paper-plane me-1 text-white"></i> Send
+                    </button>
+                </div>
+                
+                <h5 class="fw-bold mb-3 footer-heading text-dark">Connect With Us</h5>
+                <div class="social-icons d-flex gap-2">
+                    <a href="#" class="social-icon hover-bg-black d-flex align-items-center justify-content-center rounded-circle"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon hover-bg-black d-flex align-items-center justify-content-center rounded-circle"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon hover-bg-black d-flex align-items-center justify-content-center rounded-circle"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon hover-bg-black d-flex align-items-center justify-content-center rounded-circle"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon hover-bg-black d-flex align-items-center justify-content-center rounded-circle"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <div class="footer-bottom mt-5 py-3 ">
+        <div class="container">
+            <div class="d-flex justify-content-between flex-wrap small text-muted align-items-center">
+                
+                <p class="mb-0 fs-6">Copyright © 2025 Doccure. All Rights Reserved</p>
+                
+                <div class="d-flex align-items-center ">
+                    <div class="privacy-links ">
+                        <a href="#" class=" fs-6 me-1 fw-medium text-decoration-none">Legal Notice</a>
+                        <span class="dot-divider fs-4 text-primary">•</span>
+                        <a href="#" class=" fs-6 ms-1 fw-medium text-decoration-none">Privacy Policy</a>
+                        <span class="dot-divider fs-4 me-1 text-primary ">•</span>
+                        <a href="#" class=" fs-6 fw-medium text-decoration-none">Refund Policy</a>
+                    </div>
+                    
+             
+                </div>
+
+                       <div class="payment-methods ">
+                        <img src="images/card-01.svg" alt="" class="img-fluid payment-icons-img">
+                     <img src="images/card-02.svg" alt="" class="img-fluid payment-icons-img">
+                        <img src="images/card-03.svg" alt="" class="img-fluid payment-icons-img">
+                        <img src="images/card-04.svg" alt="" class="img-fluid payment-icons-img">
+                        <img src="images/card-05.svg" alt="" class="img-fluid payment-icons-img">
+                        <img src="images/card-06.svg" alt="" class="img-fluid payment-icons-img">
+
+                    </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="js/script4.js"></script>  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>

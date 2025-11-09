@@ -1,0 +1,601 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style2.css">
+  <title>Profile 2</title>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-white main-navbar shadow-sm">
+    <div class="container-fluid  px-5">
+        
+        <a class="navbar-brand ps-5" href="#">
+        <img class="w-75" src="images/logo.png" alt="">
+      </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav align-items-center">
+                
+                    <li class="nav-item dropdown mx-2  ">
+            <a class="nav-link dropdown-toggle " href="#" data-bs-toggle="dropdown">Home</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">General Home 1</a></li>
+              <li><a class="dropdown-item" href="index.html">General Home 2</a></li>
+              <li><a class="dropdown-item" href="#">General Home 3</a></li>
+              <li><a class="dropdown-item" href="#">Cardiology</a></li>
+              <li><a class="dropdown-item" href="#">Eyecare</a></li>
+              <li><a class="dropdown-item" href="#">Veterinary</a></li>
+              <li><a class="dropdown-item" href="#">Pediatric</a></li>
+              <li><a class="dropdown-item" href="#">Fertility</a></li>
+              <li><a class="dropdown-item" href="#">ENT</a></li>
+              <li><a class="dropdown-item" href="#">Cosmetics</a></li>
+              <li><a class="dropdown-item" href="#">Lab Test</a></li>
+            </ul>
+          </li>
+                <li class="nav-item dropdown active-nav-item">
+                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDoctors" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Doctors
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDoctors">
+                        <li><a class="dropdown-item" href="profile.html">Doctor Profile</a></li>
+                        <li><a class="dropdown-item" href="dashboard.html">Doctor Dashboard</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarPatients" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Patients
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarPatients">
+                        <li><a class="dropdown-item" href="#">Search Patient</a></li>
+                        <li><a class="dropdown-item" href="profile2.html">Doctor Profile2 </a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarPharmacy" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Pharmacy
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarPharmacy">
+                        <li><a class="dropdown-item" href="#">Search Pharmacy</a></li>
+                        <li><a class="dropdown-item" href="#">Pharmacy Dashboard</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarPages" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Pages
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarPages">
+                        <li><a class="dropdown-item" href="#">About Us</a></li>
+                        <li><a class="dropdown-item" href="#">Services</a></li>
+                        <li><a class="dropdown-item" href="#">FAQ</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarBlog" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Blog
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarBlog">
+                        <li><a class="dropdown-item" href="#">Blog List</a></li>
+                        <li><a class="dropdown-item" href="#">Blog Details</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarAdmin" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Admin
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarAdmin">
+                        <li><a class="dropdown-item" href="#">Admin Login</a></li>
+                        <li><a class="dropdown-item" href="#">Admin Dashboard</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item ps-4 d-flex align-items-center navbar-icons ps-5">
+                    
+                    <a class="nav-icon-link me-2" href="#"><i class="fas fa-search"></i></a>
+          
+                    <a id="themeToggle" class="nav-icon-link me-2" style="cursor:pointer;" ><i id="themeIcon" class="fa-solid fa-sun"></i></a>
+
+                    <a class="nav-icon-link me-2" href="#"><i class="fas fa-bell"></i><span class="badge bg-danger small position-absolute top-0 end-0 rounded-circle">1</span></a>
+                    <a class="nav-icon-link me-2" href="#"><i class="fas fa-shopping-cart"></i> <span class="badge bg-success small position-absolute top-0 end-0 rounded-circle">1</span></a>
+                    <a class="nav-icon-link me-3" href="#"><i class="fas fa-user-circle"></i> <span class="badge bg-primary small position-absolute top-0 end-0 rounded-circle">1</span></a>
+
+                    <a class="nav-link  p-0" href="#">
+                        <img src="images/doctor-thumb-02-Cbbh6L4C.jpg" alt="" class="rounded-circle profile-image">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+  <div class="text-center navbar-doctor position-relative pt-5 pb-4 mb-5  " style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol  class="breadcrumb small mb-0 justify-content-center  text-muted fw-medium">
+                <li class="breadcrumb-item "><i class="fa-solid fa-house text-info"></i></li>
+                <li class="breadcrumb-item ">Doctors</li>
+                <li class="breadcrumb-item  " >Doctor Profile</li>
+            </ol>
+        
+        <h1 class="display-6 fw-bold mb-4 profile-page-title">Doctor Profile</h1>
+
+        <img class="position-absolute top-0 start-0" src="images/breadcrumb-bg-01.png" alt="">
+                <img class="position-absolute top-0 end-0" src="images/breadcrumb-bg-02.png" alt="">
+
+
+        </div>
+
+<section class="doctor-profile-settings  ">
+    <div class="container">
+        <div class="row ">
+            
+            <div class="col-lg-3 col-md-4">
+                <div class="profile-sidebar rounded-3 p-3   ">
+                    
+                    <div class="doctor-info-box text-center mb-3 mt-4 p-3  ">
+                        <img src="images/doctor-thumb-02-Cbbh6L4C.jpg" alt="Dr. Edalin Hendry" class="img-fluid rounded-circle mb-2 profile-photo-lg">
+                        <h5 class="fw-bold mb-0">Dr Edalin Hendry</h5>
+                        <p class="small text-muted mb-1">BDS, MDS - Oral & Maxillofacial Surgery</p>
+                        <span class="badge bg-primary-light text-primary small">Dentist</span>
+                    </div>
+
+                    <div class="availability-box mb-4">
+                        <p class="small fw-bold mb-1 text-dark">Availability</p>
+                        <select class="form-select form-select-sm" aria-label="Availability Status">
+                            <option selected>I Am Available Now</option>
+                            <option value="1">Busy</option>
+                            <option value="2">On Leave</option>
+                        </select>
+                    </div>
+
+                    <ul class="list-unstyled profile-nav-list">
+                        <li><a href="#"><i class="fas fa-tachometer-alt me-2"></i> Dashboard</a></li>
+                        <li><a href="#"><i class="fas fa-file-alt me-2"></i> Requests <span class="badge bg-warning text-dark float-end">0</span></a></li>
+                        <li><a href="#"><i class="fas fa-calendar-check me-2"></i> Appointments</a></li>
+                        <li><a href="#"><i class="fas fa-clock me-2"></i> Available Timings</a></li>
+                        <li><a href="#"><i class="fas fa-users me-2"></i> My Patients</a></li>
+                        <li><a href="#"><i class="fas fa-medkit me-2"></i> Specialties & Services</a></li>
+                        <li><a href="#"><i class="fas fa-star me-2"></i> Reviews</a></li>
+                        <li><a href="#"><i class="fas fa-book me-2"></i> Accounts</a></li>
+                        <li><a href="#"><i class="fas fa-file-invoice me-2"></i> Invoices</a></li>
+                        <li><a href="#"><i class="fas fa-wallet me-2"></i> Payout Settings <span class="badge bg-warning text-dark float-end">0</span></a></li>
+                        <li class="active"><a href="#"><i class="fas fa-cog me-2"></i> Profile Settings</a></li>
+                        <li><a href="#"><i class="fas fa-share-alt me-2"></i> Social Media</a></li>
+                        <li><a href="#"><i class="fas fa-key me-2"></i> Change Password</a></li>
+                        <li><a href="#"><i class="fas fa-sign-out-alt me-2"></i> Logout</a></li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="col-lg-9 col-md-8">
+                <div class="profile-content-area bg-white p-4 rounded-4 shadow-sm">
+                    
+                    <h4 class="fw-bold mb-4 text-dark">Profile Settings</h4>
+
+                    <ul class="nav nav-pills mb-4 profile-tabs" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link rounded-2 me-3 py-2 px-3  active border" id="pills-basic-tab" data-bs-toggle="pill" data-bs-target="#pills-basic" type="button" role="tab" aria-controls="pills-basic" aria-selected="true">Basic Details</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link rounded-2 me-3 py-2 px-3  border" id="pills-experience-tab" data-bs-toggle="pill" data-bs-target="#pills-experience" type="button" role="tab" aria-controls="pills-experience" aria-selected="false">Experience</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link rounded-2 me-3 py-2 px-3  border" id="pills-education-tab" data-bs-toggle="pill" data-bs-target="#pills-education" type="button" role="tab" aria-controls="pills-education" aria-selected="false">Education</button>
+                        </li> 
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link rounded-2 me-3 py-2 px-3  border" id="pills-awards-tab" data-bs-toggle="pill" data-bs-target="#pills-awards" type="button" role="tab" aria-controls="pills-awards" aria-selected="false">Awards</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link rounded-2 me-3 py-2 px-3  border" id="pills-insurances-tab" data-bs-toggle="pill" data-bs-target="#pills-insurances" type="button" role="tab" aria-controls="pills-insurances" aria-selected="false">Insurances</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link rounded-2 me-3 py-2 px-3  border" id="pills-clinics-tab" data-bs-toggle="pill" data-bs-target="#pills-clinics" type="button" role="tab" aria-controls="pills-clinics" aria-selected="false">Clinics</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link rounded-2 me-3 py-2 px-3  border" id="pills-business-tab" data-bs-toggle="pill" data-bs-target="#pills-business" type="button" role="tab" aria-controls="pills-business" aria-selected="false">Business Hours</button>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-basic" role="tabpanel" aria-labelledby="pills-basic-tab">
+                            
+                            <h5 class="fw-bold text-dark fs-6 mb-3">Profile</h5>
+                            <div class="d-flex align-items-center mb-4 p-4  rounded-3 border">
+                                
+                                <div class="bg-light border d-flex align-items-center justify-content-center rounded-2 p-5 me-3">
+                                    <i class="fas fa-camera fa-2x text-muted "></i>
+                                </div>
+
+                                <div>
+                                    <h5>Profile Image</h5>
+                                    <input type="file" class="d-none" id="input-file">
+                                    <a href="#" class="fw-semibold text-primary text-decoration-none " id="upload-btn">Upload New</a>
+                                    <a href="#" class="text-danger small ms-2 fw-bold text-decoration-none">Remove</a>
+                                    <p class="small text-muted mb-0 mt-1">
+                                        Your image should be below 4 MB, Accepted format (jpg, png, svg)
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <h5 class="fw-bold text-dark mb-3">Information</h5>
+                            <form id="myForm" class="border p-3 rounded-3">
+                                <div class="row g-3 mb-4">
+                                    <div class="col-md-4">
+                                        <label for="firstName" class="form-label small">First Name <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control form-control-sm" id="firstName">
+                                        <p class="text-danger small"></p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="lastName" class="form-label small">Last Name <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control form-control-sm" id="lastName">
+                                         <p class="text-danger small"></p>
+
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="displayName" class="form-label small">Display Name <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control form-control-sm" id="displayName">
+                                         <p class="text-danger small"></p>
+
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="designation" class="form-label small">Designation <span class="text-danger">*</span></label>
+                                        
+                                        <input type="text" class="form-control form-control-sm" id="designation">
+                                        <p class="text-danger small"></p>
+
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="phone" class="form-label small">Phone Numbers <span class="text-danger">*</span></label>
+                                        <input type="tel" class="form-control form-control-sm" id="phone">
+                                        <p class="text-danger small"></p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="email" class="form-label small">Email Address <span class="text-danger">*</span></label>
+                                        <input type="email" class="form-control form-control-sm" id="email">
+                                        <p class="text-danger small"></p>
+
+                                    </div>
+                                </div>
+
+                             <div class="mb-4">
+  <label class="form-label small">Known Languages <span class="text-danger">*</span></label>
+  <div class="d-flex flex-wrap gap-2 align-items-center border p-2 rounded-3">
+    <div id="languageContainer" class="d-flex flex-wrap gap-2">
+      <span class="badge bg-light text-dark border">English <span class="text-danger ms-1" style="cursor:pointer;">×</span></span>
+      <span class="badge bg-light text-dark border">German <span class="text-danger ms-1" style="cursor:pointer;">×</span></span>
+      <span class="badge bg-light text-dark border">Portuguese <span class="text-danger ms-1" style="cursor:pointer;">×</span></span>
+    </div>
+
+    <input type="text" id="languageInput" class="form-control form-control-sm w-auto border-0" placeholder="Add a tag">
+    <a href="#" id="addTagBtn" class=" ms-auto text-decoration-none fw-semibold fs-6">Save</a>
+  </div>
+</div>
+                            </form>
+                            
+                            <h5 class="fw-bold text-dark mb-3 mt-4">Memberships</h5>
+                            <div class="p-3 border">
+                        <div id="membershipContainer">
+    <div class="membership-item  mb-3 ">
+      <div class="row g-3 align-items-end">
+        <div class="col-md-3">
+          <label class="form-label small">Title <span class="text-danger">*</span></label>
+          <input type="text" class="form-control rounded-2" placeholder="Add Title">
+        </div>
+        <div class="col-md-8">
+          <label class="form-label small">About Membership <span class="text-danger">*</span></label>
+          <input type="text" class="form-control rounded-2" >
+        </div>
+        <div class="col-md-1 mb-2">
+          <a  class="text-decoration-none text-danger w-100 delete-btn">Delete</a>
+        </div>
+      </div>
+
+    </div>
+    
+  </div>
+    <a  id="addNewBtn" class=" d-block  text-end text-decoration-none add-btn mt-2">Add New</a>
+                            </div>                         
+                            <div class="text-end mt-4 pt-3 border-top">
+                                <button class="btn rounded-pill  bg-secondary bg-opacity-25 hover-bg-black me-2">Cancel</button>
+                                <button class="btn btn-info text-white rounded-pill">Save Changes</button>
+                            </div>
+                            
+                        </div>
+ <div class="tab-pane fade" id="pills-education" role="tabpanel" aria-labelledby="pills-education-tab">
+                            
+    <div class="d-flex align-items-center justify-content-between a mb-4">
+     <h4 class="fw-bold  text-dark">Education</h4>
+     <button class="btn btn-info text-white rounded-pill ">Add New Eduction</button>
+
+    </div>
+                            
+                            
+                                <div class="education-entry mb-4 p-3 border rounded-3 bg-white">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <h5 class="fw-bold mb-0 text-dark">Eduction</h5>
+                                         <div class="d-flex align-items-center">
+                                     <span class="text-danger small me-3 fw-bold" style="cursor: pointer;">Delete</span>
+                                     <button class="btn btn-sm text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#newEducationCollapse" aria-expanded="true" aria-controls="newEducationCollapse">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                </div>
+                                       
+                                    </div>
+                                    
+                                    <div class="collapse show" id="newEducationCollapse">
+                                        <div class="row g-3">
+                                            
+                                            <div class="col-12 mb-3 p-3">
+                                                        <div class="d-flex align-items-center  p-3  rounded-3 ">
+                                
+                                <div class="bg-light border d-flex align-items-center justify-content-center rounded-2 p-4 me-3">
+                                    <i class="fa-solid fa-file text-muted fs-5"></i>
+                                </div>
+
+                                <div>
+                                    <h5>Logo</h5>
+                                    <input type="file" class="d-none" id="input-file-logo">
+                                    <a href="#" class="fw-semibold text-primary text-decoration-none " id="upload-btn-logo">Upload New</a>
+                                    <a href="#" class="text-danger small ms-2 fw-bold text-decoration-none">Remove</a>
+                                    <p class="small text-muted mb-0 mt-1">
+                                        Your image should be below 4 MB, Accepted format (jpg, png, svg)
+                                    </p>
+                                </div>
+                            </div>
+                                            </div>
+                        
+                                            <div class="col-md-6">
+                                                <label for="institutionName" class="form-label small">Name of the institution <span class="text-danger">*</span></label>
+                                                <input type="text" class="form-control form-control-sm" id="institutionName">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="courseName" class="form-label small">Course <span class="text-danger">*</span></label>
+                                                <input type="text" class="form-control form-control-sm" id="courseName">
+                                            </div>
+                        
+                                            <div class="col-md-4">
+                                                <label for="startDate" class="form-label small">Start Date <span class="text-danger">*</span></label>
+                                                <input type="date" class="form-control form-control-sm" id="startDate" value="2025-11-02">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label for="endDate" class="form-label small">End Date <span class="text-danger">*</span></label>
+                                                <input type="date" class="form-control form-control-sm" id="endDate" value="2025-11-02">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label for="noOfYears" class="form-label small">No of Years <span class="text-danger">*</span></label>
+                                                <input type="number" class="form-control form-control-sm" id="noOfYears">
+                                            </div>
+                        
+                                            <div class="col-12">
+                                                <label for="description" class="form-label small">Description <span class="text-danger">*</span></label>
+                                                <textarea class="form-control form-control-sm" id="description" rows="3"></textarea>
+                                            </div>
+                                            
+                                            <div class="col-12 text-end">
+                                                <span class="text-danger small fw-bold" style="cursor: pointer;">Reset</span>
+                                            </div>
+                        
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            <div class="education-entry mb-4 p-3 border rounded-3 bg-white">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <h5 class="fw-bold mb-0 text-dark">Cambridge (MBBS)</h5>
+                                            <div class="d-flex align-items-center">
+                                     <span class="text-danger small me-3 fw-bold" style="cursor: pointer;">Delete</span>
+                                     <button class="btn btn-sm text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#newCambridgeCollapse" aria-expanded="true" aria-controls="newCambridgeCollapse">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                </div>
+                                    </div>
+                                    
+                                    <div class="collapse " id="newCambridgeCollapse">
+                                         <div class="row g-3">
+                                            
+                                            <div class="col-12 mb-3">
+                                                      <div class="d-flex align-items-center p-3   ">
+                                
+                                <div class="bg-light border d-flex align-items-center justify-content-center rounded-2 p-4 me-3">
+                                    <i class="fa-solid fa-file text-muted fs-5"></i>
+                                </div>
+
+                                <div>
+                                    <h5>Logo</h5>
+                                    <input type="file" class="d-none" id="input-file-cambridge">
+                                    <a href="" class="fw-semibold text-primary text-decoration-none " id="upload-btn-cambridge">Upload New</a>
+                                    <a href="" class="text-danger small ms-2 fw-bold text-decoration-none">Remove</a>
+                                    <p class="small text-muted mb-0 mt-1">
+                                        Your image should be below 4 MB, Accepted format (jpg, png, svg)
+                                    </p>
+                                </div>
+                            </div>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <label for="institutionName" class="form-label small">Name of the institution <span class="text-danger">*</span></label>
+                                                <input type="text" class="form-control form-control-sm" id="institutionName" value="Cambridge">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="courseName" class="form-label small">Course <span class="text-danger">*</span></label>
+                                                <input type="text" class="form-control form-control-sm" id="courseName" value="MBBS">
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <label for="startDate" class="form-label small">Start Date <span class="text-danger">*</span></label>
+                                                <input type="date" class="form-control form-control-sm" id="startDate" value="2025-11-02">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label for="endDate" class="form-label small">End Date <span class="text-danger">*</span></label>
+                                                <input type="date" class="form-control form-control-sm" id="endDate" value="2025-11-02">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label for="noOfYears" class="form-label small">No of Years <span class="text-danger">*</span></label>
+                                                <input type="number" class="form-control form-control-sm" id="noOfYears" value="5">
+                                            </div>
+
+                                            <div class="col-12">
+                                                <label for="description" class="form-label small">Description <span class="text-danger">*</span></label>
+                                                <textarea class="form-control form-control-sm" id="description" rows="3"></textarea>
+                                            </div>
+                                            
+                                            <div class="col-12 text-end">
+                                                <span class="text-danger small fw-bold" style="cursor: pointer;">Reset</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                           
+                            <div class="text-end mt-4 pt-3 border-top">
+                                <button class="btn rounded-pill  bg-secondary bg-opacity-25 hover-bg-black me-2">Cancel</button>
+                                <button class=" btn  btn-info rounded-pill text-white fw-medium">Save Changes</button>
+                            </div>
+                            
+                        </div>
+
+     <div class="tab-pane fade" id="pills-experience" role="tabpanel" aria-labelledby="pills-experience-tab">
+                            </div>
+                        <div class="tab-pane fade" id="pills-awards" role="tabpanel" aria-labelledby="pills-awards-tab">
+                            </div>
+                        <div class="tab-pane fade" id="pills-insurances" role="tabpanel" aria-labelledby="pills-insurances-tab">
+                            </div>
+                        <div class="tab-pane fade" id="pills-clinics" role="tabpanel" aria-labelledby="pills-clinics-tab">
+                            </div>
+                        <div class="tab-pane fade" id="pills-business" role="tabpanel" aria-labelledby="pills-business-tab">
+                            </div>
+
+
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+<footer class=" pt-5  mt-5  position-relative">
+    <div class="container  footer-top">
+            <img class="position-absolute top-0 end-0 " src="images/footer-bg-02.png" alt="">
+
+        <div class="row">
+
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                <h5 class="fw-semibold mb-4  text-dark">Company</h5>
+                <ul class="list-unstyled footer-links">
+                    <li class="mb-3 fw-medium "> <a  href="#" >About</a></li>
+                    <li class="mb-3 fw-medium"><a href="#">Features</a></li>
+                    <li class="mb-3 fw-medium"><a href="#">Works</a></li>
+                    <li class="mb-3 fw-medium"><a href="#">Careers</a></li>
+                    <li class="mb-3 fw-medium"><a href="#">Locations</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                <h5 class="fw-semibold mb-4  text-dark">Treatments</h5>
+                <ul class="list-unstyled footer-links">
+                    <li class="mb-3 fw-medium"><a href="#">Dental</a></li>
+                    <li class="mb-3 fw-medium"><a href="#">Cardiac</a></li>
+                    <li class="mb-3 fw-medium"><a href="#">Spinal Cord</a></li>
+                    <li class="mb-3 fw-medium"><a href="#">Hair Growth</a></li>
+                    <li class="mb-3 fw-medium"><a href="#">Anemia & Disorder</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                <h5 class="fw-semibold mb-4  text-dark">Specialities</h5>
+                <ul class="list-unstyled footer-links">
+                    <li class="mb-3 fw-medium"><a href="#">Transplant</a></li>
+                    <li class="mb-3 fw-medium"><a href="#">Cardiologist</a></li>
+                    <li class="mb-3 fw-medium"><a href="#">Oncology</a></li>
+                    <li class="mb-3 fw-medium"><a href="#">Pediatrics</a></li>
+                    <li class="mb-3 fw-medium"><a href="#">Gynaecology</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                <h5 class="fw-semibold mb-4  text-dark">Utilites</h5>
+                <ul class="list-unstyled footer-links">
+                    <li class="mb-3 fw-medium"><a href="#">Pricing</a></li>
+                    <li class="mb-3 fw-medium"><a href="#">Contact</a></li>
+                    <li class="mb-3 fw-medium"><a href="#">Request A Quote</a></li>
+                    <li class="mb-3 fw-medium"><a href="#">Premium Membership</a></li>
+                    <li class="mb-3 fw-medium"><a href="#">Integrations</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-8 col-sm-12 mb-4">
+                <h5 class="fw-semibold mb-3  text-dark">Newsletter</h5>
+                <p class=" text-muted mb-2">Subscribe & Stay Updated from the Doccure</p>
+                
+                <div class="input-group mb-4 newsletter-input-group  position-relative">
+                    <input type="email" class="form-control p-3 " placeholder="Enter Email Address" aria-label="Enter Email Address">
+                    <button class="btn btn-info rounded-pill fw-bold  position-absolute text-white " >
+                        <i class="fas fa-paper-plane me-1 text-white"></i> Send
+                    </button>
+                </div>
+                
+                <h5 class="fw-semibold mb-3  text-dark">Connect With Us</h5>
+                <div class="social-icons d-flex gap-2">
+                    <a href="#" class="social-icon hover-bg-black d-flex align-items-center justify-content-center rounded-circle"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon hover-bg-black  d-flex align-items-center justify-content-center rounded-circle"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon hover-bg-black  d-flex align-items-center justify-content-center rounded-circle"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon hover-bg-black  d-flex align-items-center justify-content-center rounded-circle"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon hover-bg-black  d-flex align-items-center justify-content-center rounded-circle"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <div class="footer-bottom mt-5 py-3 ">
+        <div class="container">
+            <div class="d-flex justify-content-between flex-wrap small text-muted align-items-center">
+                
+                <p class="mb-0 fs-6">Copyright © 2025 Doccure. All Rights Reserved</p>
+                
+                <div class="d-flex align-items-center ">
+                    <div class="privacy-links ">
+                        <a href="#" class=" fs-6 me-1 fw-medium text-decoration-none">Legal Notice</a>
+                        <span class="dot-divider fs-4 text-primary">•</span>
+                        <a href="#" class=" fs-6 ms-1 fw-medium text-decoration-none">Privacy Policy</a>
+                        <span class="dot-divider fs-4 me-1 text-primary">•</span>
+                        <a href="#" class=" fs-6 fw-medium text-decoration-none">Refund Policy</a>
+                    </div>
+                    
+             
+                </div>
+
+                       <div class="payment-methods ">
+                        <img src="images/card-01.svg" alt="Payment Methods" class="img-fluid payment-icons-img">
+                     <img src="images/card-02.svg" alt="Payment Methods" class="img-fluid payment-icons-img">
+                        <img src="images/card-03.svg" alt="Payment Methods" class="img-fluid payment-icons-img">
+                        <img src="images/card-04.svg" alt="Payment Methods" class="img-fluid payment-icons-img">
+                        <img src="images/card-05.svg" alt="Payment Methods" class="img-fluid payment-icons-img">
+                        <img src="images/card-06.svg" alt="Payment Methods" class="img-fluid payment-icons-img">
+
+                    </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/script2.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

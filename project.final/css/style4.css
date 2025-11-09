@@ -1,0 +1,203 @@
+
+.navbar-doctor{background-color: #f9fbff;;}
+.bg-light {
+    background-color: #f7f9fd !important; 
+}
+.text-primary {
+    color: #007bff !important;
+}
+.bg-primary-light {
+    background-color: #e6f0ff !important; 
+}
+.bg-secondary-light {
+    background-color: #f0f3f8 !important; 
+}
+.profile-page-title {
+    color: #343a40;
+}
+.profile-sidebar {
+    position: sticky;
+    top: 20px;
+    border: 1px solid #e9ecef;
+    
+background-image: url(../images/doctor-sidebar-bg-uydvSqQk.jpg);
+background-repeat: no-repeat;
+background-size: 100% 13% ;}
+
+.profile-photo-lg {
+    width: 140px;
+    height : 140px;        border: 5px solid white;}
+
+.profile-nav-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f8f9fa;
+    position: relative;
+}
+.profile-nav-list li:last-child {
+    border-bottom: none;
+}
+.profile-nav-list li a {
+    color: #495057;
+    text-decoration: none;
+    display: block;
+    padding: 0.3rem 0;
+    transition: color 0.2s;
+}
+.profile-nav-list li.active a,
+.profile-nav-list li a:hover {
+    color: #007bff;
+    font-weight: 600;
+}
+.profile-nav-list li.active {
+    background-color: #f0f4ff;
+    border-radius: 0.25rem;
+    padding-left: 0.5rem;
+}
+.profile-content-area {
+    border: 1px solid #e9ecef;}
+.profile-tabs .nav-link {
+    color: #495057;
+    border-radius: 0.25rem;
+    margin-right: 0.5rem;
+    padding: 0.5rem 1rem;
+}
+.profile-tabs .nav-link.active {
+    background-color: #007bff;
+    color: white;
+    font-weight: 600;
+}
+.profile-tabs .nav-link:hover:not(.active) {
+    background-color: #e9ecef;
+}
+.profile-image-upload-box {
+    background-color: #f7f9fd;
+    border: 1px dashed #ced4da;
+}
+
+.hover-black:hover {
+    color: black !important;
+}
+       .patient-description-icon-box { background-color: #f1f1f194; }
+        .patient-description-icon { font-size: 1.5rem; color: #6c757d; }
+        
+        .patient-description-number { font-size: 1.5rem; }
+        .patient-description-title { color: #6c757d; font-size: 0.9rem; margin-bottom: 3px; }
+        .appointment .list-group li:hover {
+            background-color: #f1f1f194;
+        }
+
+       .appointment-patient-name ,.invoice-name , .recent-patients-name,.notification-descripton span,.clinc-link {
+            transition: 0.6s;
+        }
+     
+        .notification-descripton {
+            transition: 1.2s;
+        }
+         .appointment-patient-name:hover ,.invoice-name:hover , .recent-patients-name:hover,.notification-descripton:hover,.notification-descripton:hover span, .clinc-link:hover {
+    color: #007bff !important;
+            cursor: pointer !important;
+
+         }
+        /*الرسمه عامل سيرش*/
+        .card .nav-tabs .nav-link { border: none; border-bottom: 2px solid transparent; color: #6c757d; padding: 8px 15px; }
+        .card .nav-tabs .nav-link.active { color: #007bff; border-color: #007bff; font-weight: bold; }
+        .chart-container { height: 200px; }
+        .list-group img ,.upcoming-img ,.recent-patients-img{
+             width: 45px; height: 45px; 
+        }
+        .description-patient p{  line-height: 1.2; }
+        
+        .upcoming-buttons a:hover  { 
+            background-color: black !important;
+            color: white !important;
+         }
+        .clinic-item {
+            width: 90% ;
+        }
+
+
+
+        
+input:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+.btn-info {
+        background: linear-gradient(90.08deg, #0e82fd .09%, #06aed4 70.28%) !important;  border: none;}
+.text-primary {  color: #007bff !important; }
+.navbar-doctor ol i {   font-size: 13px !important;}
+.navbar-nav .nav-link {
+    color: #343a40 !important;
+    font-weight: 500;
+    margin: 0 0.5rem;
+    padding: 0.5rem 0.75rem !important;
+    transition: color 0.2s;}
+.navbar-nav .nav-link:hover {  color: #007bff !important;}
+.navbar-nav  .nav-link.active { color: #007bff !important;}
+.nav-icon-link {
+    color: #6c757d;
+    font-size: 1.1rem; position: relative;padding: 0.5rem;  transition: color 0.2s;}
+.nav-icon-link:hover {
+    color: #007bff;
+}
+.nav-icon-link .badge { font-size: 0.6rem;padding: 0.3em 0.5em; }
+.profile-image {
+    width: 35px;
+    height: 35px;}
+
+
+    footer {background-color: #f7f9fd; }
+.footer-links li {margin-bottom: 0.3rem;}
+.footer-links li a {
+    color: #6c757d;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition:  0.4s;
+}
+
+.footer-links li a:hover {
+    color: #007bff;
+    display: block;
+    scale: 1.03;
+}
+.newsletter-input-group button {
+    top: 25%;
+    right: 20px;
+    font-size: 13px;
+}
+.newsletter-input-group input::placeholder {  opacity: 75%;}
+.social-icon {
+    width: 35px;
+    height: 35px;
+    background-color: #e6efff;
+    color: #6c757d;
+    transition: background-color 0.3s, color 0.3s; 
+    border: 1px solid #e9ecef;}
+.hover-bg-black:hover {
+    background-color: black !important;
+    color: white;}
+.social-icon:hover i {
+      animation: iconRotate 0.4s ease-in-out forwards; }
+
+.footer-bottom {
+    background-color: #e6efff;
+    border-top: 1px solid #cce0ff;}
+
+.footer-bottom a {
+    color: #6c757d !important;
+    transition: color 0.2s;}
+.footer-bottom a:hover {
+    color: #007bff !important;
+}
+.payment-icons-img {
+    max-height: 25px;
+  width: auto;}
+
+  @keyframes iconRotate {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
