@@ -1,0 +1,180 @@
+﻿@model WorkOrder
+@{ Layout = null; }
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Order</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin:0; background:#011f3a; }
+        .container { width:80%; margin:30px auto; background:#07d5bd; box-shadow:0 0 10px rgba(0,0,0,0.1); border:1px solid #ccc; }
+        .header { background:#046a77; color:white; text-align:center; padding:15px; font-size:22px; font-weight:bold; }
+        .company-info { background:#f5e1c8; text-align:center; padding:10px; font-size:18px; }
+        table { width:100%; border-collapse:collapse; background: white; }
+        td, th { border:1px solid #ccc; padding:10px; font-size:14px; }
+        .section-title { background:#f5e1c8; font-weight:bold; text-align:center; padding:10px; }
+        input, textarea, select { width:100%; padding:8px; border:2px solid #ccc; border-radius:4px; box-sizing: border-box; }
+        textarea { height:100px; resize:none; }
+        .submit-section { margin:25px 0; text-align:center; padding-bottom: 20px; }
+        .submit-btn { background:#046a77; color:white; border:none; padding:12px 40px; font-size:16px; border-radius:30px; cursor:pointer; transition:0.3s ease; }
+        .submit-btn:hover { background:#023f46; transform:translateY(-3px); }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">Work Order - أمر تشغيل</div>
+    <div class="company-info"><strong>ABB</strong> - معلومات الشركة</div>
+
+    <form id="workOrderForm">
+        <table>
+            <tr>
+                <td>Work Order Number</td>
+                <td><input type="text" id="orderNum" placeholder="رقم أمر التشغيل"></td>
+                <td>رقم أمر التشغيل</td>
+            </tr>
+            <tr>
+                <td>Date</td>
+                <td><input type="text" id="orderDate" placeholder="التاريخ"></td>
+                <td>التاريخ</td>
+            </tr>
+            <tr>
+                <td>Department</td>
+                <td><input type="text" id="dept" placeholder="القسم"></td>
+                <td>القسم</td>
+            </tr>
+            <tr>
+                <td>Location</td>
+                <td><input type="text" id="loc" placeholder="الموقع"></td>
+                <td>الموقع</td>
+            </tr>
+            <tr>
+                <td>Requester</td>
+                <td><input type="text" id="req" placeholder="القائم بالطلب"></td>
+                <td>القائم بالطلب</td>
+            </tr>
+        </table>
+
+        <div class="section-title">Work type - نوع العمل</div>
+        <div style="padding:20px; text-align:center; background: white;">
+            <select id="workType">
+                <option value="" disabled selected>-- اختر النوع --</option>
+                <option>صيانة</option>
+                <option>مشروع</option>
+                <option>عينه</option>
+                <option>استبدال</option>
+                <option>حاله غيرامنه</option>
+                <option>اقتراح</option>
+                <option>جديد</option>
+                <option>استكمال</option>
+                <option>ازاله</option>
+            </select>
+        </div>
+
+            <div class="date-container">
+
+        <div class="date-box">
+            <label>Start Date</label>
+            <input type="date" class="date-input">
+        </div>
+
+        <div class="date-box">
+            <label>End Date</label>
+            <input type="date" class="date-input">
+        </div>
+
+    </div>
+
+
+        <div class="section-title">Job Description - وصف العمل المطلوب</div>
+        <div style="padding:10px; background: white;">
+            <textarea id="description" placeholder="اكتب وصف العمل هنا..."></textarea>
+        </div>
+
+
+                <div class="bottom-section" style="padding:20px;">
+            <div style="display:flex; gap:20px; margin-bottom:15px;">
+                <input asp-for="Supervisor" placeholder="الرئيس المباشر">
+                <input asp-for="Manager" placeholder="مشرف القسم">
+            </div>
+            <label>Notes:</label>
+            <textarea asp-for="Notes"></textarea>
+        </div>
+
+
+        <div class="submit-section">
+            <button type="button" onclick="sendWhatsApp()" class="submit-btn">
+                إرسال عبر واتساب ✅
+            </button>
+        </div>
+    </form>
+</div>
+
+
+
+<script>
+    async function sendWhatsApp() {
+        // 1. تجميع البيانات من الخانات باستخدام الـ IDs
+        var formData = {
+            WorkOrderNumber: document.getElementById("orderNum").value,
+            Date: document.getElementById("orderDate").value,
+            Department: document.getElementById("dept").value,
+            Location: document.getElementById("loc").value,
+            Requester: document.getElementById("req").value,
+            WorkType: document.getElementById("workType").value,
+            JobDescription: document.getElementById("description").value
+        };
+
+        // التأكد من ملء الخانات الأساسية قبل الإرسال
+        if (!formData.WorkOrderNumber || !formData.Requester) {
+            alert("يرجى ملء رقم الطلب واسم القائم بالطلب على الأقل.");
+            return;
+        }
+
+        try {
+            // 2. إرسال البيانات للـ Controller لحفظها في السيكوال
+            const response = await fetch('/WorkOrder/Create', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData)
+            });
+
+            if (response.ok) {
+                // 3. تجهيز نص الرسالة المنسق للواتساب
+                var message = "*طلب تشغيل جديد تم حفظه*" + "%0a" +
+                              "--------------------------" + "%0a" +
+                              "*رقم الطلب:* " + formData.WorkOrderNumber + "%0a" +
+                              "*القسم:* " + formData.Department + "%0a" +
+                              "*القائم بالطلب:* " + formData.Requester + "%0a" +
+                              "*الوصف:* " + formData.JobDescription;
+                
+                // 4. قائمة الأرقام التي ستستلم الرسالة (عدل الأرقام هنا)
+                var phoneNumbers = [
+                     "201034400625", "201202525688", 
+                   
+                   
+                ]; 
+
+              // 5. حلقة تكرار بفاصل زمني لفتح الواتساب لكل رقم
+phoneNumbers.forEach(function(number, index) {
+    setTimeout(function() {
+        var url = "https://wa.me/" + number + "?text=" + message;
+        window.open(url, '_blank');
+    }, index * 2000); // هيستنى ثانيتين بين كل رقم والتاني عشان المتصفح ميهنجش
+});
+
+                alert("تم الحفظ في قاعدة البيانات وفتح نوافذ الواتساب للأرقام المحددة.");
+            } else {
+                alert("فشل الحفظ في قاعدة البيانات، تأكد من اتصال السيرفر.");
+            }
+        } catch (error) {
+            console.error("Error:", error);
+            alert("حدث خطأ في الاتصال بالسيرفر.");
+        }
+    }
+</script>
+
+</body>
+</html>
